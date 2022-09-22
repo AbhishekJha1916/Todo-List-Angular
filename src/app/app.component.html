@@ -1,0 +1,6 @@
+<h1>Todo List App</h1>
+
+<input type="text" [(ngModel)]="todoItem"> <br> <br>
+<button (click)="addToTodoList()">Add to todo list</button>
+
+<li *ngFor="let myTodoItem of todoList">{{myTodoItem}}</li>

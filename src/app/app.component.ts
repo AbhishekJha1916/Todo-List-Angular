@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'todo-list';
+  // Store the value of the input
+  todoItem: string = "";
+
+  // Store the list of todo items
+  todoList: string[] = [];
+
+  // on button click
+  addToTodoList = () => {
+      // Pushing todo itm to the list
+      this.todoList.push(this.todoItem);
+
+      // Clear the value of todoItem
+      this.todoItem = '';
+  }
 }
